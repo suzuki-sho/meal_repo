@@ -1,4 +1,4 @@
-# README
+# テーブル設計
 
 ## users テーブル
 
@@ -8,10 +8,9 @@
 | email    | string | null: false |
 | password | string | null: false |
 
-
 - has_many :room_users
 - has_many :rooms, through: room_users
-- has_many :messages
+- has_many :reports
 
 ## rooms テーブル
 
@@ -23,16 +22,27 @@
 
 - has_many :room_users
 - has_many :users, through: room_users
-- has_many :messages
+- has_many :reports
 
-
-## messages テーブル
+## room_users テーブル
 
 | Column  | Type       | Options                        |
 | ------- | ---------- | ------------------------------ |
-| content | string     |                                |
-| user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
+| user_id | references | null: false, foreign_key: true |
+| room_id | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
+
+## reports テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| body    | string     |                                |
+| user_id | references | null: false, foreign_key: true |
+| room_id | references | null: false, foreign_key: true |
 
 ### Association
 
