@@ -26,10 +26,11 @@
 }
 
 .create-room a {
-  border: 2px solid #E5446D;
+  border: 3px ridge #e53b4e;
   padding: 14px;
   color: #000000;
   text-decoration: none;
+  background-color: pink;
 }
 
 .side-bar-footer {
@@ -70,9 +71,10 @@
 }
 
 .header-button a {
+  border: 5px ridge #FFC857;
+  color: #000000;
   text-decoration: none;
-  border: 2px solid #333;
-  color: #333;
+  background-color: pink;
   padding: 20px;
 }
 
