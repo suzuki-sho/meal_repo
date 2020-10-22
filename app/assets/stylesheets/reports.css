@@ -1,0 +1,89 @@
+.wrapper {
+  display: flex;
+}
+.side-bar {
+  background-color: #FFC857;
+  width: 200px;
+  height: 100vh;
+}
+
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.create-room {
+  font-size: 10px;
+}
+
+.create-room a {
+  border: 3px ridge #e53b4e;
+  padding: 14px;
+  color: #000000;
+  text-decoration: none;
+  background-color: pink;
+}
+
+.side-bar-footer {
+  background-color: #E9724C;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.past-repo {
+  padding: 20px 0 40px;
+}
+
+.past-repo-name a {
+  color: white;
+}
+
+.chat {
+  background-color: #F8F4E3;
+  width: calc(100% - 200px);
+}
+.chat-header {
+  background-color: #E5446D;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.header-button {
+  margin-top: 40px;
+}
+
+.header-button a {
+  border: 5px ridge #FFC857;
+  color: #000000;
+  text-decoration: none;
+  background-color: pink;
+  padding: 20px;
+}
+
+.reports {
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+}
+.form {
+  background-color: #FFC857;
+  height: 90px;
+  padding: 20px 40px;
+}
