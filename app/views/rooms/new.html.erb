@@ -6,11 +6,12 @@
     <div>
     <label>レポート相手</label>
     </div>
-    <select>
+    <select name="room[user_ids][]">
       <option value="">レポートを送る相手を選択してください</option>
       <% User.where.not(id: current_user.id).each do |user| %>  
-        <option><%= user.name %></option>
+        <option value=<%= user.id %>><%= user.name %></option>
       <% end %>
     </select>
+    <input name="room[user_ids][]" type="hidden" value=<%= current_user.id %>>
   <% end %>
 </div>
