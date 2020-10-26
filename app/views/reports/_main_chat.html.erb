@@ -5,9 +5,11 @@
     </div>
   </div>
   <div class="right-header">
+  <% current_user.rooms.each do |room| %>
     <div class="header-button">
-      <a href="#">終了する</a>
+      <%= link_to room.name, room_reports_path(room) %>
     </div>
+  <% end %>
   </div>
 </div>
 
