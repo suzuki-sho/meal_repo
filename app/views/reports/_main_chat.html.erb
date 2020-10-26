@@ -7,7 +7,7 @@
   <div class="right-header">
   <% current_user.rooms.each do |room| %>
     <div class="header-button">
-      <%= link_to room.name, room_reports_path(room) %>
+      <%= link_to room.name, new_room_report_path(room) %>
     </div>
   <% end %>
   </div>

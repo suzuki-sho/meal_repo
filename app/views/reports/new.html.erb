@@ -1,7 +1,8 @@
 <div>
   <h1>投稿する</h1>
-  <%= form_with(model: @report, local: true) do |f| %>
-    <%= f.text_field :image, placeholder: "Image Url" %>
-    <%= f.submit "SEND" %>
+  <%= form_with url:"/rooms/#{current_user.id}/reports"  do |form| %>
+    <%= form.text_field :body %>
+    <%= form.text_field :image %>
+    <%= form.submit "SEND" %>
   <% end %>
 </div>

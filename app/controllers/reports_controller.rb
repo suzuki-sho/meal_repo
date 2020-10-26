@@ -5,6 +5,7 @@ class ReportsController < ApplicationController
 
   def new
     @report = Report.new
+    @room = Room.find_by(id:1)
   end
 
   def create
