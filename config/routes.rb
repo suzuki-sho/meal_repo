@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root to: "reports#index"
   resources :users, only: [:edit, :update]
   resources :rooms, only: [:new, :create] do
-    resources :reports, only: [:index, :create]
+    resources :reports, only: [:index, :new, :create]
   end
 end
