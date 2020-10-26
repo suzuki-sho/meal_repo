@@ -14,8 +14,10 @@
 </div>
 
 <div class="reports">
-  <%= link_to "レポート",new_room_path %>
-レポート
+<%@reports.each do |report| %>
+<p><%= report.body %></p>
+<span><%= report.image %></span>
+<% end%>  
 </div>
 
 <div class="form">

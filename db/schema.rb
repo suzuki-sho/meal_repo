@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2020_10_26_040513) do
 
   create_table "reports", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "body"
+    t.string "image"
     t.bigint "room_id"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
