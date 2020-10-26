@@ -12,7 +12,7 @@ class ReportsController < ApplicationController
   def create
     @room = Room.find(params[:room_id])
     @report = @room.reports.new(report_params)
-    if @reports.save
+    if @report.save
       redirect_to room_reports_path(@room)
     else
       @reports = @room.reports.includes(:user)
