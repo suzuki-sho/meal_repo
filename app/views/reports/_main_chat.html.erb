@@ -14,9 +14,10 @@
 </div>
 
 <div class="reports">
-<%@reports.each do |report| %>
+<% @reports.each do |report| %>
 <p><%= report.body %></p>
 <span><%= report.image %></span>
+<%= image_tag report.picture if report.picture.attached? %>
 <% end%>  
 </div>
 
