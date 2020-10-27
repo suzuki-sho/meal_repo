@@ -5,15 +5,19 @@
     </div>
   </div>
   <div class="right-header">
+  <% current_user.rooms.each do |room| %>
     <div class="header-button">
-      <a href="#">終了する</a>
+      <%= link_to room.name, new_room_report_path(room) %>
     </div>
+  <% end %>
   </div>
 </div>
 
 <div class="reports">
-  <%= link_to "レポート",new_room_path %>
-レポート
+<%@reports.each do |report| %>
+<p><%= report.body %></p>
+<span><%= report.image %></span>
+<% end%>  
 </div>
 
 <div class="form">
