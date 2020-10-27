@@ -22,7 +22,7 @@ class ReportsController < ApplicationController
 
   private
   def report_params
-    params.require(:report).permit(:body, :image).merge(user_id: current_user.id)
+    params.require(:report).permit(:body, :image, :picture).merge(user_id: current_user.id)
   end
 
 end
