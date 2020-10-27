@@ -33,11 +33,13 @@
   background-color: pink;
 }
 
+.reports-area {
+  overflow: scroll
+}
 .side-bar-footer {
   background-color: #E9724C;
   height: calc(100vh - 100px);
   padding: 0 20px;
-  overflow: scroll;
 }
 
 .past-repo {
@@ -81,6 +83,7 @@
 .reports {
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
+  overflow: scroll;
 }
 .form {
   background-color: #FFC857;

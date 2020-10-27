@@ -13,16 +13,13 @@
   </div>
 </div>
 
-<div class="reports">
-<% @reports.each do |report| %>
-<p><%= report.body %></p>
-<span><%= report.image %></span>
-<%= image_tag report.picture.variant(resize: '500x500') if report.picture.attached? %>
-<% end%>  
-</div>
-
-<div class="form">
-  <div class="form-input">
-    <input class="form-">
-フォーム
+<div class="reports-area">
+  <div class="reports">
+    <% @reports.each do |report| %>
+      <p><%= report.body %></p>
+      <li>
+      <%= image_tag report.picture.variant(resize: "500x500"), if report.picture.attached? %>
+      </li>
+    <% end %>  
+  </div>
 </div>
