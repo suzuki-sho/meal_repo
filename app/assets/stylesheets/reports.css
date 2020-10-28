@@ -146,15 +146,15 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: #57C3E9;
+  background-color: #3F72AF;
   border-radius: 20px;
-  color: #fff;
+  color: #F9F7F7;
   border: 0;
   font-size: 18px;
 }
 
 form input[type="submit"]:hover {
-  background-color: #84d3ef;
+  background-color: #769FCD;
 }
 
 .contents.row {
