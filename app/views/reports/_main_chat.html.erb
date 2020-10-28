@@ -1,27 +1,24 @@
 <div class="chat-header">
   <div class="left-header">
     <div class="header-title">
-    タイトル
+    食事報告アプリ
     </div>
   </div>
   <div class="right-header">
   <% current_user.rooms.each do |room| %>
     <div class="header-button">
-      <%= link_to room.name, new_room_report_path(room) %>
+      <%= link_to room.name, new_room_report_path(room) %><br>
+      <p>→食事を報告！！</p>
     </div>
   <% end %>
   </div>
 </div>
 
-<div class="reports">
-<%@reports.each do |report| %>
-<p><%= report.body %></p>
-<span><%= report.image %></span>
-<% end%>  
-</div>
-
-<div class="form">
-  <div class="form-input">
-    <input class="form-">
-フォーム
+<div class="reports-area">
+  <div class="reports">
+    <% @reports.each do |report| %>
+      <p><%= report.body %></p>
+      <%= image_tag report.picture.variant(resize: "500x500") if report.picture.attached? %>
+    <% end %>  
+  </div>
 </div>
