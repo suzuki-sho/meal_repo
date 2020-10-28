@@ -126,3 +126,11 @@ div.chat-header {
   bottom: 0;
   height: calc(100vh - 150px);
 }
+
+.container {
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+  background-color: white;
+  box-sizing: border-box;
+}
