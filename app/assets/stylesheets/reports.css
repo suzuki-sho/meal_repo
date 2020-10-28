@@ -2,7 +2,7 @@
   display: flex;
 }
 .side-bar {
-  background-color: #FFC857;
+  background-color: #F8F4E3;
   width: 200px;
   height: 100vh;
 }
@@ -26,11 +26,11 @@
 }
 
 .create-room a {
-  border: 3px ridge #e53b4e;
+  border: 1px ridge #BDBDBD;
   padding: 14px;
   color: #000000;
   text-decoration: none;
-  background-color: pink;
+  background-color: #FFE2E2;
 }
 
 .reports-area {
@@ -39,7 +39,7 @@
 
 
 .side-bar-footer {
-  background-color: #E9724C;
+  background-color: #3F72AF;
   height: calc(100vh - 100px);
   padding: 0 20px;
 }
@@ -53,15 +53,16 @@
 }
 
 .chat {
-  background-color: #F8F4E3;
+  background-color: #F9F7F7;
   width: calc(100% - 200px);
 }
 div.chat-header {
-  background-color: #E5446D;
   height: 100px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
+  background-size: cover;
+  background-color: #3F72AF;
 }
 
 .top-image {
@@ -69,8 +70,23 @@ div.chat-header {
   width: 100%;
 }
 
+.header-title::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FFF;
+}
+
+.header-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FFF;
+}
+
+
 .header-title {
-  color: #333;
+  color: #222;
   font-size: 40px;
   margin-top: 25px;
 }
@@ -80,10 +96,10 @@ div.chat-header {
 }
 
 .header-button a {
-  border: 5px ridge #FFC857;
+  border: 1px ridge #BDBDBD;
   color: #000000;
   text-decoration: none;
-  background-color: pink;
+  background-color: #FFE2E2;
   padding: 20px;
 }
 
