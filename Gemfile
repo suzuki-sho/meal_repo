@@ -56,5 +56,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'pry-rails'
-gem 'mini_magick'
+gem 'mini_magick', '~> 4.8'
 gem 'image_processing', '~> 1.2'
