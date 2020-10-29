@@ -1,12 +1,11 @@
 <div class="room-form">
-  <h1>新規ルームへ</h1>
     <%=form_with model: @room, local: true do |f| %>
-    <%= f.label :ルーム名 %>
+    <%= f.label :新規ルーム名 %>
     <%= f.text_field :name %>
     <div>
     <label>レポート相手</label>
     </div>
-    <select name="room[user_ids][]">
+    <select name="room[user_ids][]" class="partner">
       <option value="">レポートを送る相手を選択してください</option>
       <% User.where.not(id: current_user.id).each do |user| %>  
         <option value=<%= user.id %>><%= user.name %></option>
