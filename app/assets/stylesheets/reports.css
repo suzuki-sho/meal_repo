@@ -119,6 +119,33 @@ div.chat-header {
   height: calc(100vh - 100px - 90px);
   padding: 10px 40px 0;
   overflow: scroll;
+  display: flex;
+  position: relative;
+  width: 100%;
+  display: table;
+}
+
+.report-body {
+  font-size: 17vh;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-shadow: 
+  2px  2px 1px #003366,
+ -2px  2px 1px #003366,
+  2px -2px 1px #003366,
+ -2px -2px 1px #003366,
+  2px  0px 1px #003366,
+  0px  2px 1px #003366,
+ -2px  0px 1px #003366,
+  0px -2px 1px #003366;  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  width: 80%;
+  height: 3.2rem;
 }
 
 .reports-area {

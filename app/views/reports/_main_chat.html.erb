@@ -19,7 +19,7 @@
   <div class="reports">
   <% @reports.each do |report| %>
       <% if report.user_id == current_user.id %>
-      <p><%= report.body %></p>
+      <div class="report-body"><%= report.body %></div>
       <%= image_tag(report.picture.variant(resize: "500x500")) if report.picture.attached? %>
     <% end %>  
     <% end %>
