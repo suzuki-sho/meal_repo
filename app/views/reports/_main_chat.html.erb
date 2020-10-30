@@ -1,13 +1,15 @@
 <div class="chat-header">
   <div class="left-header">
     <div class="header-title">
-    Chat-App
+    <% current_user.rooms.each do |room| %>
+    <%= room.name %>
+    <% end%>
     </div>
   </div>
   <div class="right-header">
   <% current_user.rooms.each do |room| %>
     <div class="header-button">
-      <%= link_to room.name, new_room_report_path(room) %>
+      <%= link_to "食事を報告", new_room_report_path(room) %>
     </div>
   <% end %>
   </div>
