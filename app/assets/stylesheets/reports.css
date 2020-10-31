@@ -118,11 +118,13 @@ div.chat-header {
 .reports {
   height: calc(100vh - 100px - 90px);
   padding: 10px 40px 0;
-  overflow: scroll;
+  
   display: flex;
   position: relative;
   width: 100%;
-  display: table;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .report-body {
@@ -141,17 +143,19 @@ div.chat-header {
   position: absolute;
   top: auto;
   right: 0;
-  bottom: 65%;
+  bottom: 50%;
   left: auto;
   margin: auto;
   width: 80%;
   height: 3.2rem;
+  white-space: nowrap;
 }
 
 .reports-area {
   position: absolute;
   bottom: 0;
   height: calc(100vh - 150px);
+  overflow: scroll;
 }
 
 .container {
