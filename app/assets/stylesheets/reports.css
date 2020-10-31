@@ -126,7 +126,7 @@ div.chat-header {
 }
 
 .report-body {
-  font-size: 17vh;
+  font-size: 500%;
   letter-spacing: 4px;
   color: #ffffff;
   text-shadow: 
@@ -139,9 +139,9 @@ div.chat-header {
  -2px  0px 1px #003366,
   0px -2px 1px #003366;  
   position: absolute;
-  top: 0;
+  top: auto;
   right: 0;
-  bottom: 0;
+  bottom: 65%;
   left: auto;
   margin: auto;
   width: 80%;
