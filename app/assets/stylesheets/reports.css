@@ -212,3 +212,9 @@ form input[type="submit"]:hover {
   height: 8vh;
   margin: 2% 0;
 }
+
+.preview-image {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
