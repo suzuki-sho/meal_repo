@@ -118,13 +118,44 @@ div.chat-header {
 .reports {
   height: calc(100vh - 100px - 90px);
   padding: 10px 40px 0;
-  overflow: scroll;
+  
+  display: flex;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.report-body {
+  font-size: 500%;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-shadow: 
+  2px  2px 1px #003366,
+ -2px  2px 1px #003366,
+  2px -2px 1px #003366,
+ -2px -2px 1px #003366,
+  2px  0px 1px #003366,
+  0px  2px 1px #003366,
+ -2px  0px 1px #003366,
+  0px -2px 1px #003366;  
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 50%;
+  left: auto;
+  margin: auto;
+  width: 80%;
+  height: 3.2rem;
+  white-space: nowrap;
 }
 
 .reports-area {
   position: absolute;
   bottom: 0;
   height: calc(100vh - 150px);
+  overflow: scroll;
 }
 
 .container {
@@ -184,4 +215,10 @@ form input[type="submit"]:hover {
 .partner {
   height: 8vh;
   margin: 2% 0;
+}
+
+.preview-image {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
 }
