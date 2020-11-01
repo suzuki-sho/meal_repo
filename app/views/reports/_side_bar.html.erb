@@ -1,6 +1,8 @@
 <div class="side-bar-header">
   <div class="header-name">
+    <% if user_signed in?%>
     <%= link_to current_user.name, edit_user_path(current_user) %>
+    <% end %>
   </div>
   <div class="create-room">
     <a href="/rooms/new">新規ルーム</a>
