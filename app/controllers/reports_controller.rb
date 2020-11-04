@@ -1,5 +1,5 @@
 class ReportsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :index]
+  before_action :authenticate_user!, only: [:new, :create]
 
   def index
     @reports = Report.all

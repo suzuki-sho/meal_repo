@@ -6,14 +6,14 @@
 </div>
 
 <div class="side-bar-footer">
-  <div class="past-repo">
-    <div class="past-repo-name">
-      <a href="#">過去レポ１</a>
+  <div class="user-links">
+    <div class="user-link">
+      <%= link_to('ログイン', new_user_session_path) %>
     </div>
   </div>
-  <div class="past-repo">
-    <div class="past-repo-name">
-      <a href="#">過去レポ２</a>
+  <div class="user-links">
+    <div class="user-link">
+       <%= link_to('ログアウト', destroy_user_session_path, :method=>'delete') %>
     </div>
   </div>
 </div>

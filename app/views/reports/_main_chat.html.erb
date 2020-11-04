@@ -4,29 +4,41 @@
       食事報告アプリ
     </div>
     <div class="header-title">
-    <% current_user.rooms.each do |room| %>
-    <%= room.name %>
-    <% end%>
+    <% if user_signed_in? %>
+      <% current_user.rooms.each do |room| %>
+      <%= room.name %>
+      <% end %>
+    <% end %>
     </div>
   </div>
   <div class="right-header">
-  <% current_user.rooms.each do |room| %>
-    <div class="header-button">
-      <%= link_to "食事を報告", new_room_report_path(room) %>
-    </div>
+  <% if user_signed_in?%>
+    <% current_user.rooms.each do |room| %>
+      <div class="header-button">
+        <%= link_to "食事を報告", new_room_report_path(room) %>
+      </div>
+    <% end %>
   <% end %>
   </div>
 </div>
 
 <div class="reports-area">
-  <% @reports.each do |report| %>
-    <div class="reports">
-      <% if report.user_id == current_user.id %>
-      <div class="report-body"><%= report.body %></div>
-      <div class="report-pic">
-      <%= image_tag(report.picture.variant(resize: "500x500")) if report.picture.attached? %>
-      </div>
-    <% end %>  
+  <% if user_signed_in? %>
+    <% @reports.each do |report| %>
+      <div class="reports">
+        <% if report.user_id == current_user.id %>
+          <div class="report-body">
+            <%= report.body %>
+          </div>
+          <div class="report-pic">
+            <%= image_tag(report.picture.variant(resize: "500x500")) if report.picture.attached? %>
+          </div>
+        <% end %>
+      </div>  
     <% end %>
-  </div>
+  <% else %>
+    <div class="report-pic">
+      <%= image_tag 'sample.png', :size =>'500x500' %>
+    </div>
+  <% end %>
 </div>
