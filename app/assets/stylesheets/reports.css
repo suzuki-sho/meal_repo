@@ -50,11 +50,11 @@ div.background {
   padding: 0 20px;
 }
 
-.past-repo {
+.user-links {
   padding: 20px 0 40px;
 }
 
-.past-repo-name a {
+.user-link a {
   color: white;
 }
 
