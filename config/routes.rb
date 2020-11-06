@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'cat/index'
   devise_for :users
   root to: "reports#index"
   resources :users, only: [:edit, :update, :destroy]
