@@ -13,4 +13,4 @@ class HelloWorld extends React.Component {
 HelloWorld.propTypes = {
   greeting: PropTypes.string
 };
-export default HelloWorld
+export default HelloWorld;
