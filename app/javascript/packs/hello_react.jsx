@@ -7,7 +7,16 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
 const Hello = props => (
-  <div>Hello {props.name}!</div>
+  
+  <div className='info-wrapper'>
+    <div className='info'>
+      <div className='copy-container'>
+        <h1>製作者</h1>
+          
+        <h2>お問い合わせ</h2>
+      </div>
+    </div>
+  </div>
 )
 
 Hello.defaultProps = {
@@ -24,3 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(document.createElement('div')),
   )
 })
+
+export default hello_react;

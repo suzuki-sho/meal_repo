@@ -1,5 +1,10 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
+
+import hello_react from './hello_react';
+
+reactDOM.render(<hello_react />, document.querySelector('#root'))
+
 
 class Meal extends React.Component {
   render() {
