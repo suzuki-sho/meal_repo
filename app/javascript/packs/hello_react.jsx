@@ -6,21 +6,22 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-const Hello = props => (
-  
+const Hello = (props) => {
+  return (
   <div className='info-wrapper'>
     <div className='info'>
       <div className='copy-container'>
         <h1>製作者</h1>
-          
+        {props.title}
         <h2>お問い合わせ</h2>
       </div>
     </div>
   </div>
-)
+  );
+};
 
 Hello.defaultProps = {
-  name: 'David'
+  title: 'David'
 }
 
 Hello.propTypes = {
@@ -34,4 +35,3 @@ document.addEventListener('DOMContentLoaded', () => {
   )
 })
 
-export default hello_react;
