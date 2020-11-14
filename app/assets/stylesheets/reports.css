@@ -12,6 +12,7 @@ div.background {
   background-color: #F8F4E3;
   width: 23%;
   height: 100vh;
+
 }
 
 .side-bar-header {
@@ -41,6 +42,7 @@ div.background {
 
 .reports-area {
   overflow: scroll;
+  width: 100%;
 }
 
 
@@ -140,8 +142,9 @@ div.chat-header {
  -2px  0px 1px #003366,
   0px -2px 1px #003366;  
   position: absolute;
+  justify-content: center;
   top: auto;
-  right: 0;
+  right: auto;
   bottom: 50%;
   left: auto;
   margin: auto;
