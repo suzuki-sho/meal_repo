@@ -151,6 +151,7 @@ div.chat-header {
   width: 80%;
   height: 3.2rem;
   white-space: nowrap;
+  text-align: center;
 }
 
 .reports-area {
@@ -158,6 +159,7 @@ div.chat-header {
   bottom: 0;
   height: calc(100vh - 150px);
   overflow: scroll;
+
 }
 
 .container {
