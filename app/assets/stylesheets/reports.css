@@ -40,12 +40,6 @@ div.background {
   white-space: nowrap;
 }
 
-.reports-area {
-  overflow: scroll;
-  width: 100%;
-}
-
-
 .side-bar-footer {
   background-color: #3F72AF;
   height: calc(100vh - 150px);
@@ -64,8 +58,10 @@ div.background {
   background-color: #F9F7F7;
   width: 77%;
 }
+
 div.chat-header {
   height: 150px;
+  width: 100vw;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
@@ -159,7 +155,6 @@ div.chat-header {
   bottom: 0;
   height: calc(100vh - 150px);
   overflow: scroll;
-
 }
 
 .container {
